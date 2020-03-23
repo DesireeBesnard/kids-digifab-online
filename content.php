@@ -1,350 +1,104 @@
-<?php  get_header();
-require_once('components/navbar.inc.php');
-?>
+<?php get_header(); ?>
 
-
-    <header>
-        <!-- Intro -->
-        <div class="card card-intro blue-gradient mb-4">
-
-            <div class="card-body white-text rgba-black-light text-center pt-5 pb-4">
-
-                <!--Grid row-->
-                <div class="row d-flex justify-content-center">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-
-                        <h1 class="font-weight-bold mb-4">Website Name</h1>
-                        <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad impedit corporis ratione facere?
-                            Cupiditate unde aliquid reiciendis animi, quas inventore, praesentium neque voluptatem, iusto
-                            perferendis placeat similique dolor eum?
-                        </p>
-
+<div class="container-fluid head">
+    <div class="container head-container">
+        <div class="row row-header">
+            <div class="col-6"></div>
+            <div class="col-6 d-flex align-items-center">
+                <div>
+                    <h1 class="header-title montserrat mb-3">Kids Digifab Online</h1>
+                    <p class="dekko text-center">Découvrez la plateforme</p>
+                    <div class="scroll-icon smooth-scroll position-relative">
+                        <a href="#presentation"><span></span></a>
                     </div>
-                    <!--Grid column-->
-
                 </div>
-                <!--Grid row-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid dekko" id="presentation">
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-6 d-flex flex-column justify-content-center">
+                <p class="text-center">Une plateforme pour apprendre le numérique de façon ludique</p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn front-page-button text-white">Je m'inscris!</button>
+                </div>
 
             </div>
-
+            <div class="col-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xRfqVhi4ACQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-        <!-- Intro -->
+    </div>
+</div>
+<div class="container-fluid dekko">
+    <div class="container pt-5 pb-5 mb-5">
+        <h1 class="text-center mt-5 mb-5">COMMENT ÇA MARCHE</h1>
 
-    </header>
-    <!--Main Navigation-->
-
-    <!--Main layout-->
-    <main>
-        <div class="container">
-
-            <!--Section: Dynamic Content Wrapper-->
-            <section>
-              <div id="dynamic-content"></div>
-
-            </section>
-            <!--Section: Dynamic Content Wrapper-->
-
-            <!--Section: Articles-->
-            <section class="text-center">
-
-                <!--Section heading-->
-                <h1 class="h2 font-weight-bold my-4">Recent articles</h1>
-
-                <!--Grid row-->
-                <div class="row wow fadeIn">
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-4">
-                        <!--Featured image-->
-                        <div class="view overlay hm-white-slight rounded z-depth-2 mb-4">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/81.jpg" class="img-fluid" alt="First sample image">
-                            <a>
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Excerpt-->
-                        <a href="" class="pink-text">
-                            <h6 class="mb-3 mt-4">
-                                <i class="fa fa-bolt"></i>
-                                <strong> Web Push Notifications</strong>
-                            </h6>
-                        </a>
-                        <h4 class="mb-3 font-weight-bold dark-grey-text">
-                            <strong>This is title of the news</strong>
-                        </h4>
-                        <p>by
-                            <a class="font-weight-bold dark-grey-text">Billy Forester</a>, 15/07/2018</p>
-                        <p class="grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                            placeat facere possimus voluptas.</p>
-                        <a class="btn btn-info btn-rounded btn-md">Read more</a>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <!--Featured image-->
-                        <div class="view overlay hm-white-slight rounded z-depth-2 mb-4">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" class="img-fluid" alt="Second sample image">
-                            <a>
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Excerpt-->
-                        <a href="" class="deep-orange-text">
-                            <h6 class="mb-3 mt-4">
-                                <i class="fa fa-pie-chart"></i>
-                                <strong> Analytics</strong>
-                            </h6>
-                        </a>
-                        <h4 class="mb-3 font-weight-bold dark-grey-text">
-                            <strong>This is title of the news</strong>
-                        </h4>
-                        <p>by
-                            <a class="font-weight-bold dark-grey-text">Billy Forester</a>, 15/07/2018</p>
-                        <p class="grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                            placeat facere possimus voluptas.</p>
-                        <a class="btn btn-info btn-rounded btn-md">Read more</a>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <!--Featured image-->
-                        <div class="view overlay hm-white-slight rounded z-depth-2 mb-4">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" class="img-fluid" alt="Thrid sample image">
-                            <a>
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Excerpt-->
-                        <a href="" class="cyan-text">
-                            <h6 class="mb-3 mt-4">
-                                <i class="fa fa-cogs"></i>
-                                <strong> Marketing Automation</strong>
-                            </h6>
-                        </a>
-                        <h4 class="mb-3 font-weight-bold dark-grey-text">
-                            <strong>This is title of the news</strong>
-                        </h4>
-                        <p>by
-                            <a class="font-weight-bold dark-grey-text">Billy Forester</a>, 15/07/2018</p>
-                        <p class="grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                            placeat facere possimus voluptas.</p>
-                        <a class="btn btn-info btn-rounded btn-md">Read more</a>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row wow fadeIn">
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-2">
-                        <!--Featured image-->
-                        <div class="view overlay hm-white-slight rounded z-depth-2 mb-4">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/81.jpg" class="img-fluid" alt="First sample image">
-                            <a>
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Excerpt-->
-                        <a href="" class="pink-text">
-                            <h6 class="mb-3 mt-4">
-                                <i class="fa fa-bolt"></i>
-                                <strong> Web Push Notifications</strong>
-                            </h6>
-                        </a>
-                        <h4 class="mb-3 font-weight-bold dark-grey-text">
-                            <strong>This is title of the news</strong>
-                        </h4>
-                        <p>by
-                            <a class="font-weight-bold dark-grey-text">Billy Forester</a>, 15/07/2018</p>
-                        <p class="grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                            placeat facere possimus voluptas.</p>
-                        <a class="btn btn-info btn-rounded btn-md">Read more</a>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-2">
-                        <!--Featured image-->
-                        <div class="view overlay hm-white-slight rounded z-depth-2 mb-4">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" class="img-fluid" alt="Second sample image">
-                            <a>
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Excerpt-->
-                        <a href="" class="deep-orange-text">
-                            <h6 class="mb-3 mt-4">
-                                <i class="fa fa-pie-chart"></i>
-                                <strong> Analytics</strong>
-                            </h6>
-                        </a>
-                        <h4 class="mb-3 font-weight-bold dark-grey-text">
-                            <strong>This is title of the news</strong>
-                        </h4>
-                        <p>by
-                            <a class="font-weight-bold dark-grey-text">Billy Forester</a>, 15/07/2018</p>
-                        <p class="grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                            placeat facere possimus voluptas.</p>
-                        <a class="btn btn-info btn-rounded btn-md">Read more</a>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-2">
-                        <!--Featured image-->
-                        <div class="view overlay hm-white-slight rounded z-depth-2 mb-4">
-                            <img src="https://mdbootstrap.com/img/Photos/Others/images/13.jpg" class="img-fluid" alt="Thrid sample image">
-                            <a>
-                                <div class="mask"></div>
-                            </a>
-                        </div>
-
-                        <!--Excerpt-->
-                        <a href="" class="cyan-text">
-                            <h6 class="mb-3 mt-4">
-                                <i class="fa fa-cogs"></i>
-                                <strong> Marketing Automation</strong>
-                            </h6>
-                        </a>
-                        <h4 class="mb-3 font-weight-bold dark-grey-text">
-                            <strong>This is title of the news</strong>
-                        </h4>
-                        <p>by
-                            <a class="font-weight-bold dark-grey-text">Billy Forester</a>, 15/07/2018</p>
-                        <p class="grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                            placeat facere possimus voluptas.</p>
-                        <a class="btn btn-info btn-rounded btn-md">Read more</a>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Pagination -->
-                <nav class="d-flex justify-content-center my-4 wow fadeIn">
-                    <ul class="pagination pagination-circle pg-info mb-0">
-
-                        <!--First-->
-                        <li class="page-item disabled">
-                            <a class="page-link">First</a>
-                        </li>
-
-                        <!--Arrow left-->
-                        <li class="page-item disabled">
-                            <a class="page-link" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </li>
-
-                        <!--Numbers-->
-                        <li class="page-item active">
-                            <a class="page-link">1</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link">2</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link">3</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link">4</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link">5</a>
-                        </li>
-
-                        <!--Arrow right-->
-                        <li class="page-item">
-                            <a class="page-link" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </li>
-
-                        <!--Last-->
-                        <li class="page-item">
-                            <a class="page-link">Last</a>
-                        </li>
-
-                    </ul>
-                </nav>
-
-            </section>
-            <!--Section: Articles-->
-
+        <div class="row mt-5 pt-5">
+            <div class="col-3">
+                <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img1-commentcamarche.png" alt="">
+            </div>
+            <div class="col-3">
+                <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img2-commentcamarche.png" alt="">
+            </div>
+            <div class="col-3">
+                <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img3-commentcamarche.png" alt="">
+            </div>
+            <div class="col-3">
+                <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img4-commentcamarche.png" alt="">
+            </div>
         </div>
-    </main>
-    <!--Main layout-->
-
-    <!--Footer-->
-    <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-        <!--Call to action-->
-        <div class="pt-4">
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank" role="button">Download MDB
-                <i class="fa fa-download ml-2"></i>
-            </a>
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start free tutorial
-                <i class="fa fa-graduation-cap ml-2"></i>
-            </a>
+        <div class="row text-center">
+            <div class="col-3">
+                <p>Les cours sont disponibles sur notre plateforme et peuvent être suivis dès l'âge de 7 ans.</p>
+            </div>
+            <div class="col-3">
+                <p>L'enfant suis l'atelier de façon ludique sous format vidéo. Celui-ci inclut un quizz d'évaluation et chaque fin d'atelier est récompensée par un label.</p>
+            </div>
+            <div class="col-3">
+                <p>Un forum et un chat sont à disposition des élèves. Ils peuvent y poser des questions ou y échanger leurs idées.</p>
+            </div>
+            <div class="col-3">
+                <p>Place à la pratique! Le but est d'optimiser le temps en privilégiant la pratique à la théorie. Le formateur est sollicité en renfort.</p>
+            </div>
         </div>
-        <!--/.Call to action-->
+    </div>
+</div>
+<div class="container-fluid dekko">
+    <div class="container position-relative">
+        <h1 class="text-center mt-3 mb-5">NOS THEMATIQUES</h1>
 
-        <hr class="my-4">
+        <ul class="carousel d-flex justify-content-center p-0">
+            <li class="li-thematiques items main-pos" id="1">
+                <p>1</p>
+            </li>
+            <li class="li-thematiques items right-pos" id="2">
+                <img src="http://farm9.staticflickr.com/8337/8234123289_2b23aeaf06.jpg" />
+            </li>
+            <li class="li-thematiques items back-pos" id="3">
+                <img src="http://farm9.staticflickr.com/8337/8234711202_831b23a2b7.jpg" />
+            </li>
+            <li class="li-thematiques items back-pos" id="4"><iframe width="500" height="281" src="https://www.youtube.com/embed/szIEr2F61DU" frameborder="0" allowfullscreen></iframe></li>
+            <li class="li-thematiques items back-pos" id="5">
+                <iframe src="https://player.vimeo.com/video/19464611" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            </li>
+            <li class="li-thematiques items back-pos" id="6">
+                <img src="http://woofie2.pixiq.com/files/cache/20030323_img_7465_3072_x_2048_619x413.jpg" />
+            </li>
+            <li class="li-thematiques items left-pos" id="7"><img src="http://www.mishes.com/wp-content/uploads/2011/12/FlickrMonday07.jpg" />
+            </li>
+        </ul>
+        <span class="d-flex">
+            <input class="position-absolute" type="button" value="Prev" id="prev">
+            <input class="position-absolute" type="button" value="Next" id="next">
+        </span>
+    </div>
+</div>
 
-        <!-- Social icons -->
-        <div class="pb-4">
-            <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-                <i class="fab fa-facebook-f mr-3"></i>
-            </a>
 
-            <a href="https://twitter.com/MDBootstrap" target="_blank">
-                <i class="fab fa-twitter mr-3"></i>
-            </a>
 
-            <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-                <i class="fa fa-youtube mr-3"></i>
-            </a>
 
-            <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-                <i class="fab fa-google-plus-g mr-3"></i>
-            </a>
-
-            <a href="https://dribbble.com/mdbootstrap" target="_blank">
-                <i class="fa fa-dribbble mr-3"></i>
-            </a>
-
-            <a href="https://pinterest.com/mdbootstrap" target="_blank">
-                <i class="fa fa-pinterest mr-3"></i>
-            </a>
-
-            <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-                <i class="fa fa-github mr-3"></i>
-            </a>
-
-            <a href="http://codepen.io/mdbootstrap/" target="_blank">
-                <i class="fa fa-codepen mr-3"></i>
-            </a>
-        </div>
-        <!-- Social icons -->
-
-        <!--Copyright-->
-        <div class="footer-copyright py-3">
-            © 2018 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
-        </div>
-        <!--/.Copyright-->
-<?php  get_footer(); ?>
+<?php get_footer(); ?>
