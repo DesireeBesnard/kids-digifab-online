@@ -28,7 +28,7 @@
 
 /* end button system */
 
-body{
+.head{
   background-image: url(../assets/background-digifab.png);
 }
 
@@ -171,28 +171,27 @@ body{
 /* end head */
 
 /* start partie thematique */
+.thematique-demo{
+  background-image: url(../assets/background-digifab.png);
+  background-position-y: -490px;
+}
+
 .carousel{
   margin: auto;
   height: 400px;
 }
 
 .li-thematiques {
-  width: 500px;
-  height: 281px;
-  background: #333;
+  width: 300px;
+  height: 400px;
+  background: #FFF;
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   overflow: hidden;
-}
-
-.li-thematiques p {
-  color: white;
-  font-weight: bold;
-  font-size: 5em;
-  text-align: center;
-  margin-top: 1.175em;
+  border-radius: 45px;
+  box-shadow: 0px 3px 56px rgba(0,0,0,.26);
 }
 
 .items {
@@ -201,7 +200,6 @@ body{
 
 .main-pos {
   z-index: 3000;
-  /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
 }
 
 .left-pos {
@@ -214,7 +212,6 @@ body{
 }
 
 .back-pos {
-  margin-left: 2em !important;
   opacity: .05;
   -webkit-transform: scale(.5);
   -moz-transform: scale(.5);
@@ -231,12 +228,70 @@ body{
 }
 
 #prev{
-  top: 44%;
+  top: 56%;
   left: -3%;
+  width: 3%;
+  height: auto;
 }
 
 #next{
-  top: 44%;
+  top: 56%;
   right: -3%;
+  width: 3%;
+  height: auto;
 }
 /* end partie thematique */
+
+/* start partie demo */
+
+
+
+/* end partie demo */
+
+/* start partie contact */
+.contact{
+  background-image: url(../assets/background-digifab.png);
+}
+
+.card-contact{
+  border-radius: 45px;
+  box-shadow: 0px 3px 56px rgba(0,0,0,.26);
+}
+
+.telnb-color{
+  color: #FF10AC;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ffffff !important;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  box-shadow: 0px 3px 6px rgba(0,0,0,.16);
+}
+/* end partie contact */
+
+/* start partie partners */
+.partners{
+  height: 35px;
+  width: auto;
+}
+
+/* end aprtie partners */
+
+/* start partie footer */
+.bottom-footer{
+  background-color:#F5F5F7;
+}
+
+
+/* end partie footer */

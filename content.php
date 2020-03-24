@@ -15,10 +15,8 @@
             </div>
         </div>
     </div>
-</div>
 
-<div class="container-fluid dekko" id="presentation">
-    <div class="container pb-5">
+    <div class="container pb-5" id="presentation">
         <div class="row">
             <div class="col-6 d-flex flex-column justify-content-center">
                 <p class="text-center">Une plateforme pour apprendre le numérique de façon ludique</p>
@@ -67,38 +65,117 @@
         </div>
     </div>
 </div>
-<div class="container-fluid dekko">
-    <div class="container position-relative">
+<div class="container-fluid dekko thematique-demo">
+    <div class="container position-relative pt-5 pb-5">
         <h1 class="text-center mt-3 mb-5">NOS THEMATIQUES</h1>
 
-        <ul class="carousel d-flex justify-content-center p-0">
-            <li class="li-thematiques items main-pos" id="1">
-                <p>1</p>
+        <ul class="carousel d-flex justify-content-center p-0 text-black">
+            <li class="li-thematiques items main-pos d-flex justify-content-center align-items-center" id="1">
+                <div class="text-center">
+                    <h2>Robotique</h2>
+                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/robotique-thematique.png" alt="">
+                    <p>Plateforme pédagogique innovante</p>
+
+                    <h2 class="mt-4">Arduino</h2>
+                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/arduino-thematique.png" alt="">
+                    <p>Domotique, robotique, informatique<br>embarquée</p>
+                </div>
             </li>
-            <li class="li-thematiques items right-pos" id="2">
-                <img src="http://farm9.staticflickr.com/8337/8234123289_2b23aeaf06.jpg" />
+            <li class="li-thematiques items right-pos d-flex justify-content-center align-items-center" id="2">
+                <div class="text-center">
+                    <h2 class="mb-4">Brico numérique</h2>
+                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/brico-thematique.jpg" alt="">
+                    <p class="mt-4">Création de son propre jeu numérique</p>
+                </div>
             </li>
-            <li class="li-thematiques items back-pos" id="3">
-                <img src="http://farm9.staticflickr.com/8337/8234711202_831b23a2b7.jpg" />
+            <li class="li-thematiques items back-pos d-flex justify-content-center align-items-center" id="3">
+                <div class="text-center">
+                    <h2 class="mb-4">Drone</h2>
+                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/drone-thematique.jpg" alt="">
+                    <p class="mt-4">Scripts de mouvements et pilotage</p>
+                </div>
             </li>
-            <li class="li-thematiques items back-pos" id="4"><iframe width="500" height="281" src="https://www.youtube.com/embed/szIEr2F61DU" frameborder="0" allowfullscreen></iframe></li>
-            <li class="li-thematiques items back-pos" id="5">
-                <iframe src="https://player.vimeo.com/video/19464611" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <li class="li-thematiques items back-pos d-flex justify-content-center align-items-center" id="4">
+                <div class="text-center">
+                    <h2>Code</h2>
+                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/code-thematique.png" alt="">
+                    <p>Langage de programmation</p>
+
+                    <h2 class="mt-4">Jeux vidéos</h2>
+                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/videogames-thematique.png" alt="">
+                    <p>Scratch, code combat, Unity</p>
+
+                </div>
             </li>
-            <li class="li-thematiques items back-pos" id="6">
-                <img src="http://woofie2.pixiq.com/files/cache/20030323_img_7465_3072_x_2048_619x413.jpg" />
+            <li class="li-thematiques items back-pos d-flex justify-content-center align-items-center" id="5">
+                <div class="text-center">
+                    <h2 class="mb-4">Graphisme</h2>
+                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/graphisme-thematique.png" alt="">
+                    <p class="mt-4">Arts graphiques</p>
+                </div>
             </li>
-            <li class="li-thematiques items left-pos" id="7"><img src="http://www.mishes.com/wp-content/uploads/2011/12/FlickrMonday07.jpg" />
+            <li class="li-thematiques items back-pos d-flex justify-content-center align-items-center" id="6">
+                <div class="text-center">
+                    <h2 class="mb-4">Montage vidéos</h2>
+                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/montage-thematique.png" alt="">
+                    <p class="mt-4">Développement de la créativité</p>
+                </div>
+            </li>
+            <li class="li-thematiques items left-pos d-flex justify-content-center align-items-center" id="7">
+                <div class="text-center">
+                    <h2 class="mb-4">Modélisation 3D</h2>
+                    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/3d-thematique.jpg" alt="">
+                    <p class="mt-4">Développement de la créativité</p>
+                </div>
             </li>
         </ul>
         <span class="d-flex">
-            <input class="position-absolute" type="button" value="Prev" id="prev">
-            <input class="position-absolute" type="button" value="Next" id="next">
+            <img class="img-fluid position-absolute" id="prev" src="<?php echo get_template_directory_uri(); ?>/assets/thematique-prec.png" alt="">
+            <img class="img-fluid position-absolute" id="next" src="<?php echo get_template_directory_uri(); ?>/assets/thematique-next.png" alt="">
         </span>
     </div>
+    <div class="container pt-5 pb-5">
+        <div class="row pt-5 pb-5">
+            <div class="col-6 mx-auto">
+                <p class="text-center">Découvrir le premier chapitre</p>
+                <div class="d-flex justify-content-center">
+                    <button class="btn front-page-button text-white">Démo</button>
+                </div>
+            </div>
+            <div class="col-6">
+
+            </div>
+        </div>
+    </div>
 </div>
+<div class="container-fluid offres">
+    <div class="container">
 
-
-
+    </div>
+</div>
+<div class="container-fluid dekko contact">
+    <div class="container pt-5 pb-5">
+        <div class="row mt-5 mb-5">
+            <div class="col-4 offset-1 bg-white card-contact pl-5 pr-5">
+                <h2 class="text-center mt-5 mb-5">CONTACT</h2>
+                <div>
+                    <input type="text" id="input1" class="form-control mb-3" placeholder="Nom">
+                    <input type="text" id="input2" class="form-control mb-3" placeholder="Prénom">
+                    <textarea name="message" id="input3" class="form-control mb-3" cols="30" rows="5" placeholder="Message"></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn front-page-button text-white mb-5">ENVOYER</button>
+                </div>
+            </div>
+            <div class="col-6 offset-1 d-flex align-items-center">
+                <div class="text-center">
+                    <h2>Découvrez nos offres</h2>
+                    <p>Nous proposons un stage découverte gratuit pour tous les curieux qui veulent tester nos cours.<br>Appelez-nous</p>
+                    <p class="telnb-color">06.77.39.41.45</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php get_footer(); ?>
