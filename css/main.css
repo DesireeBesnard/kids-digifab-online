@@ -1,7 +1,7 @@
 /* start font */
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dekko&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .montserrat{
   font-family: 'Montserrat', sans-serif;
 }
@@ -9,12 +9,22 @@
 .dekko{
   font-family: 'Dekko', cursive;
 }
+
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
 /* end font */
 
 /* start colors system */
 
 
 /* end colors system */
+
+body{
+  background-image: url(../assets/trial-bg.png);
+}
+
 
 /* start button system */
 .btn {
@@ -28,16 +38,16 @@
 
 /* end button system */
 
-.head{
+/* .head{
   background-image: url(../assets/background-digifab.png);
-}
+} */
 
 /* start header */
 
 /* start header-navbar */
 
 .logo-digifab{
-  width: 130px;
+  width: 140px;
   height: auto;
 }
 
@@ -86,16 +96,12 @@
 
 /* start head */
 
-.head-container{
-  height:90vh
-}
-
 .row-header{
-  height: 90vh;
+  height:650px;
 }
 
 .header-title{
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 /* start scroll icon */
@@ -170,11 +176,14 @@
 /* end scroll icon */
 /* end head */
 
-/* start partie thematique */
-.thematique-demo{
-  background-image: url(../assets/background-digifab.png);
-  background-position-y: -490px;
+#presentation{
+  font-size:30px;
 }
+
+/* start partie thematique */
+/* .thematique-demo{
+  background-image: url(../assets/background-digifab.png);
+} */
 
 .carousel{
   margin: auto;
@@ -199,11 +208,10 @@
 }
 
 .main-pos {
-  z-index: 3000;
+  z-index: 1000;
 }
 
 .left-pos {
-  opacity: .3;
   margin-left: -19em !important;
   z-index: 1000;
   -webkit-transform: scale(.75);
@@ -219,12 +227,16 @@
 }
 
 .right-pos {
-  opacity: .3;
   margin-left:  21em !important;
   z-index: 1000;
   -webkit-transform: scale(.75);
   -moz-transform: scale(.75);
   transform: scale(.75);
+}
+
+.img-thematiques{
+height: 90px;
+width: auto;
 }
 
 #prev{
@@ -244,14 +256,19 @@
 
 /* start partie demo */
 
-
-
 /* end partie demo */
 
-/* start partie contact */
-.contact{
-  background-image: url(../assets/background-digifab.png);
+/* start partie offres */
+.offres-text{
+  font-size:20px;
 }
+/* end partie offres */
+
+
+/* start partie contact */
+/* .contact{
+  background-image: url(../assets/background-digifab.png);
+} */
 
 .card-contact{
   border-radius: 45px;
@@ -291,6 +308,14 @@
 /* start partie footer */
 .bottom-footer{
   background-color:#F5F5F7;
+  color:#515154;
+  font-size:12px;
+  font-family: 'Myriad Pro';
+}
+
+.paiement{
+  height:25px;
+  width:auto;
 }
 
 
