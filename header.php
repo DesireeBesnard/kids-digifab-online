@@ -1,21 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<?php
+/**
+ * Header du thème, contient tout le header
+ * La partie suivante est content.php
+ *
+ */
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?>>
 <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Plateforme KDO</title>
-
-    <link href="<?php bloginfo('template_directory'); ?>/css/main.css" rel="stylesheet">
-    <?php wp_head(); ?>
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css">
+	<title>Plateforme KDO</title>
+	<?php wp_head(); ?>
 </head>
 
-<body>
-
-    <header class="container-fluid pl-0 pr-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white pt-3 pb-3">
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+<div id="page" class="site">
+	
+		<header id="masthead" class="container-fluid p-0">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="col-4">
                 <img class="logo-digifab img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/digifab_logo.png" alt="logo de Digifab">
                 <img class="ml-1 mr-1 header-social-network img-fluid" src="<?php echo get_template_directory_uri() ; ?>/assets/facebook-footer-blue.png" alt="logo de facebook">
@@ -34,7 +39,7 @@
                         'menu_id'        => 'Primary',
                         'container'      => false,
                         'depth'          => 2,
-                        'menu_class'     => 'navbar-nav position-absolute d-flex justify-content-around montserrat font-weight-bold w-100 navlinks-weight underline-menu',
+                        'menu_class'     => 'navbar-nav d-flex justify-content-around montserrat font-weight-bold w-100 navlinks-weight',
                         'walker'         => new Bootstrap_NavWalker(),
                         'fallback_cb'    => 'Bootstrap_NavWalker::fallback',
                     ));
@@ -42,4 +47,6 @@
                 </div>
             </div>
         </nav>
-    </header>
+		</header><!-- #masthead -->
+
+	<div id="content" class="site-content">

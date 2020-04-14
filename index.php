@@ -1,11 +1,36 @@
 <?php
+/**
+ * Template principal
+ */
 
-get_header(); ?>
-<!-- DEBUT BLOC CONTENT -->
+get_header();
+?>
 
-<main>
-    <?php get_template_part('content', get_post_format()); ?>
-</main> <!-- /.row -->
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
 
-<!-- FIN BLOC CONTENT -->
-<?php get_footer(); ?>
+		<?php
+		if ( have_posts() ) {
+
+			// Load posts loop.
+			while ( have_posts() ) {
+				the_post();
+				get_template_part( 'template-parts/content/content' );
+			}
+
+			// Previous/next page navigation.
+			twentynineteen_the_posts_navigation();
+
+		} else {
+
+			// If no content, include the "No posts found" template.
+			get_template_part( 'template-parts/content/content', 'none' );
+
+		}
+		?>
+
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+<?php
+get_footer();
